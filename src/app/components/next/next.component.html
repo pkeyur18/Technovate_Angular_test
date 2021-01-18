@@ -1,0 +1,16 @@
+<div class="container" *ngIf="nextPage">
+    <h4>Next Component <br>11</h4>
+</div>
+
+<section>
+    <app-current *ngIf="currentPage"></app-current>
+    <app-prev *ngIf="prevPage"></app-prev>
+</section>
+
+<div class="paginator-container" *ngIf="nextPage">
+    <a (click)="goCurrent()">&laquo;</a>
+    <a (click)="goPrev()">9</a>
+    <a (click)="goCurrent()">10</a>
+    <a class="active">11</a>
+    <a style="cursor: not-allowed;">&raquo;</a>
+</div>

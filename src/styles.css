@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+.paginator-container {
+    display: inline-block;
+  }
+  
+  .paginator-container a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 50px 2px;
+    cursor: pointer;
+  }
+  
+  .paginator-container a.active {
+    background-color: lightgrey;
+  }
+  
+  .paginator-container a:hover:not(.active) {
+    background-color: rgb(231, 231, 231);
+  }
